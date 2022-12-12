@@ -1,3 +1,5 @@
+### IN DEVELOPMENT
+
 ## Install package to Next.js app
 
 cd example pnpm install ../
