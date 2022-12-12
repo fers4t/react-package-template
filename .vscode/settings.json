@@ -1,0 +1,23 @@
+{
+   "editor.codeActionsOnSave": {
+      "source.fixAll": true,
+      "source.fixAll.eslint": true
+   },
+   "eslint.format.enable": true,
+   "eslint.alwaysShowStatus": true,
+   "eslint.codeAction.showDocumentation": {
+      "enable": true
+   },
+   "editor.defaultFormatter": "esbenp.prettier-vscode",
+   "editor.cursorSmoothCaretAnimation": true,
+   "editor.snippetSuggestions": "inline",
+   "editor.formatOnSave": true,
+   "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss06', 'zero'",
+   "editor.renderWhitespace": "boundary",
+   "editor.glyphMargin": true,
+   "editor.guides.bracketPairs": "active",
+   "editor.find.addExtraSpaceOnTop": false,
+   "editor.inlineSuggest.enabled": true,
+   "editor.suggestSelection": "first",
+   "editor.accessibilitySupport": "off"
+}
