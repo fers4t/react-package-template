@@ -30,6 +30,10 @@
       "node": ">=14.0.0"
    },
    "devDependencies": {
+      "@commitlint/cli": "17.3.0",
+      "@commitlint/config-conventional": "17.3.0",
+      "@ryansonshine/commitizen": "4.2.8",
+      "@ryansonshine/cz-conventional-changelog": "3.3.4",
       "@storybook/addon-actions": "6.5.13",
       "@storybook/addon-essentials": "6.5.13",
       "@storybook/addon-interactions": "6.5.13",
@@ -85,5 +89,23 @@
    "dependencies": {
       "@faker-js/faker": "7.6.0",
       "@storybook/addon-postcss": "2.0.0"
+   },
+   "config": {
+      "commitizen": {
+         "path": "./node_modules/@ryansonshine/cz-conventional-changelog"
+      }
+   },
+   "release-it": {
+      "git": {
+         "commitMessage": "chore(release): v${version}"
+      },
+      "github": {
+         "release": true
+      },
+      "npm": {
+         "publish": true,
+         "access": "public",
+         "publishPath": "--registry https://registry.npmjs.org"
+      }
    }
 }
