@@ -81,12 +81,19 @@
    },
    "dependencies": {
       "@faker-js/faker": "7.6.0",
-      "react-uuid": "^2.0.0"
+      "lint-staged": "^13.1.0",
+      "react-uuid": "^2.0.0",
+      "release-it": "^15.5.1"
    },
    "config": {
       "commitizen": {
          "path": "./node_modules/@ryansonshine/cz-conventional-changelog"
       }
+   },
+   "lint-staged": {
+      "./{src,__tests__}/**/*.{ts,js,jsx,tsx}": [
+         "eslint --ignore-path .gitignore --fix"
+      ]
    },
    "release-it": {
       "git": {
