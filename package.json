@@ -83,7 +83,8 @@
       "@faker-js/faker": "7.6.0",
       "lint-staged": "^13.1.0",
       "react-uuid": "^2.0.0",
-      "release-it": "^15.5.1"
+      "release-it": "^15.5.1",
+      "tslib": "^2.4.1"
    },
    "config": {
       "commitizen": {

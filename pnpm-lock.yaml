@@ -41,6 +41,7 @@ specifiers:
   release-it: ^15.5.1
   tailwindcss: ^3.2.1
   ts-jest: 29.0.3
+  tslib: ^2.4.1
   tsup: 6.2.3
   typescript: 4.8.4
 
@@ -49,6 +50,7 @@ dependencies:
   lint-staged: 13.1.0
   react-uuid: 2.0.0
   release-it: 15.5.1
+  tslib: 2.4.1
 
 devDependencies:
   '@commitlint/cli': 17.3.0
