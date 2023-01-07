@@ -1,61 +1,51 @@
-# react-package-template
+## React Package Template
 
-Next.js component for **COMPONENT**
+A clean boilerplate for creating reusable packages in React.
 
-### Installing
+### Installation
 
-```bash
-pnpm install fers4t/react-package-template
-```
+To install, simply clone the repository to your desired location.
 
 ### Usage
 
-```tsx
-import React, { useState } from 'react';
-import { CloudinaryUpload } from 'react-package-template';
+-  Click the `Use this template` button and clone the repository.
+-  Run `pnpm i` in the root directory.
+-  Code your desired functionality in the `/src` folder, remembering to export
+   it in the `/src/index.ts` file.
 
-export default function Home() {
-   const [callbacks, setCallbacks] = useState();
-   return (
-      <CloudinaryUpload
-         cloudName="YOUR CLOUD NAME"
-         uploadPreset="YOUR UPLOAD PRESET"
-         onUpload={(a) => setCallbacks(a)}
-      />
-   );
-}
-```
+### Development
 
-You can track all callbacks with `onUpload` prop. I'm storing all of them.
+Example folder structure:
 
-## Styling
+-  react-package-template
+-  your-app
 
-```tsx
-import React, { useState } from 'react';
-import { CloudinaryUpload } from 'react-package-template';
+-  Create a new React app in a separate folder (in this example, `your-app`).
+-  Run `pnpm i` in your React app, specifying the path to the package with
+   `pnpm i ../react-package-template`. This will include
+   `react-package-template` in the `dependencies` section of `your-app`'s
+   `package.json` file.
+-  Run `pnpm watch` in the package directory to automatically build the package
+   when code changes are made.
+-  Run your React app to test the package live.
 
-export default function Home() {
-   const [callbacks, setCallbacks] = useState();
+### Build
 
-   return (
-      <CloudinaryUpload
-         cloudName="YOUR CLOUD NAME"
-         uploadPreset="YOUR UPLOAD PRESET"
-         onUpload={(a) => setCallbacks(a)}
-         buttonClassNames="text-lg font-bold"
-         imageWrapperStyles={{ width: '100px', height: '100px' }}
-      />
-   );
-}
-```
+To build the package, run `pnpm run build` in the package directory.
 
-Custom styles are **overriding defaults completely**. So if you want to use custom styles, you must handle whole style
-yourself.
+### Release
 
-## TO-DO
+To release the package, run `pnpm release` in the package directory.
 
--  [ ] Add `multiple` prop to prevent/allow multiple uploads.
--  [ ] Add `signed` version ... open issues/PRs for more.
+### Features
+
+-  npm release
+-  commitlint
+
+### TO-DO
+
+-  Storybook integration
+-  ...
 
 ## License
 
