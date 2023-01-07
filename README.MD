@@ -16,9 +16,10 @@ To install, simply clone the repository to your desired location.
 ### Development
 
 Example folder structure:
-
+```
 -  react-package-template
 -  your-app
+```
 
 -  Create a new React app in a separate folder (in this example, `your-app`).
 -  Run `pnpm i` in your React app, specifying the path to the package with
