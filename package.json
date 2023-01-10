@@ -15,13 +15,14 @@
       "url": ""
    },
    "scripts": {
-      "build": "rm -rf ./dist && pnpm run build:esm && pnpm run build:cjs",
+      "build": "rm -rf ./dist && pnpm run build:esm && pnpm run build:cjs && rollup -c",
       "build:esm": "tsc",
       "build:cjs": "tsc --module CommonJS --outDir dist/cjs",
       "dev": "concurrently \"pnpm build\" \"pnpm storybook\"",
       "watch": "concurrently \"pnpm watch:esm\" \"pnpm watch:cjs\"",
       "watch:esm": "tsc --watch",
       "watch:cjs": "tsc --module CommonJS --outDir dist/cjs --watch",
+      "watch:rollup": "rollup -c -w",
       "commit": "cz",
       "storybook": "start-storybook -p 6006 --quiet",
       "build-storybook": "build-storybook",
@@ -81,9 +82,12 @@
    },
    "dependencies": {
       "@faker-js/faker": "7.6.0",
+      "@rollup/plugin-commonjs": "^24.0.0",
+      "@rollup/plugin-typescript": "^11.0.0",
       "lint-staged": "^13.1.0",
       "react-uuid": "^2.0.0",
       "release-it": "^15.5.1",
+      "rollup": "^3.9.1",
       "tslib": "^2.4.1"
    },
    "config": {
